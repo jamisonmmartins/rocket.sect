@@ -1,0 +1,60 @@
+:root{
+    font-size: 14px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+
+body {
+   /*  border: 1px solid pink; */
+    background-color: #2C2B3D;
+    min-height: 100vh;
+    max-width: 1080px ;
+    margin: auto;
+    padding: 70px 0 0;
+}
+
+nav {    
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .nav{
+    display: flex;
+    align-items: center;
+    gap: 64px;
+
+    list-style-type: none;
+    
+}
+
+nav .nav li a {
+    color:#fff ;
+    font-family: 'JetBrains Mono', monospace;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+
+
+/*
+footer {
+    border: 1px solid orange;
+    margin-bottom: 0;
+}
+
+
+#padlock {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+}
+*/
