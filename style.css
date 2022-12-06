@@ -1,24 +1,31 @@
 :root{
     font-size: 14px;
+    --heading-link-font:'JetBrains Mono', monospace;
+    --paragraph-font: 'Open Sans', sans-serif;
+    --primary-color:#fff;
+    --secondary-color:#00BFA6;
+    --tertiary-color: #7D7987;
+    --quaternary-color: #C2C2C2;
 }
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-size: 1rem;
 }
 
 body {
-   /*  border: 1px solid pink; */
     background-color: #2C2B3D;
     min-height: 100vh;
-    max-width: 1080px ;
+    max-width: 1280px ;
     margin: auto;
-    padding: 70px 0 0;
+    padding: 100px 0 20px;
 }
 
-nav {    
+nav {
+    max-width: 1080px ;    
+    margin: 0 auto 120px;
+
     display: flex;
     justify-content: space-between;
 }
@@ -29,32 +36,92 @@ nav .nav{
     gap: 64px;
 
     list-style-type: none;
-    
 }
 
 nav .nav li a {
-    color:#fff ;
-    font-family: 'JetBrains Mono', monospace;
+    color:var(--primary-color) ;
+    font-family: var(--heading-link-font);
     font-style: normal;
     font-weight: 500;
+
     line-height: 28px;
 
     text-decoration: none;
     text-transform: capitalize;
+}
+
+main {
+    margin: auto;
+    max-width: 1090px ;
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main section {
+    max-width: 620px;
+}
+
+main h1 {
+    color:var(--primary-color);
+    font-family: var(--heading-link-font);
+    font-weight: 700;
+    font-size: 2.6rem;
+    
+    line-height: 40px;
+
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+main h1 > span {
+    color: var(--secondary-color);
+}
+
+main section p {
+    color:var(--tertiary-color);
+    font-family: var(--paragraph-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 28px;
+
+    text-align: center;
+}
+
+main section p > span {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+main section p > strong {
+    color: var(--quaternary-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.line {
+    width: 568px;
+    border:1px solid var(--secondary-color);
+    margin: 150px auto 30px;
 
 }
 
-
-/*
-footer {
-    border: 1px solid orange;
-    margin-bottom: 0;
+footer, footer > a {
+    color: var(--primary-color);
+    font-family: var(--heading-link-font);
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+    text-decoration: none;
 }
-
 
 #padlock {
     position: fixed;
     left: 20px;
     bottom: 20px;
 }
-*/
