@@ -1,4 +1,4 @@
-# Desafio avançado - Recriando layout
+# Desafio - Recriando layout
 
 Este projeto é um desafio da trilha Explorer, turma 8, da Rocketseat.
 
